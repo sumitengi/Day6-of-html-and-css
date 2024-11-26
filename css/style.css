@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    width: 1000px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: aqua;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav>ul>li{
+    font-size: 30px;
+    border: 2px solid red;
+    padding: 10px;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+}
+nav>ul>li:hover{
+    overflow: visible;
+}
+.raj-li{
+    position: absolute;
+    top: 125%;
+    left: -5px;
+    width: 150px;
+    opacity: 0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+nav>ul>li:hover .raj-li{
+    top: 100%;
+    opacity: 1;
+}
+.raj-li>li{
+   list-style: none;
+   background-color: yellow;
+   text-align: center;
+   padding: 10px;
+   border-bottom: 2px solid lightblue;
+}
+.raj-li:hover{
+    overflow: visible;
+}
+.raj-li:hover .uda-li{
+    left: 100%;
+    opacity: 1;
+}
+.uda-li{
+    background-color: greenyellow;
+    width: 250px;
+    position: absolute;
+    left: 120%;
+    top: 110px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.uda-li>li{
+    list-style: none;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid lightcoral;
+}
+.sig-li{
+    width: 380px;
+    background-color: yellow;
+    position: absolute;
+    top: 120%;
+    left: -70px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.sig-li>li{
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid lightblue;
+}
+nav>ul>li:hover .sig-li{
+    top: 103%;
+    opacity: 1;
+}

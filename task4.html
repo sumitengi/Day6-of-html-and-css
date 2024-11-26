@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            width: 300px;
+        }
+        .main{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            position: relative;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            transition: 1s;
+            top: 0px;
+            left: 0px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .box:last-child{
+            transition-delay: 0.2s;
+        }
+        .box:nth-child(3){
+            transition-delay: 0.3s;
+        }
+        .box:nth-child(2){
+            transition-delay: 0.5s;
+        }
+        .main:hover .box:last-child{
+            left: 630px;
+        }
+        .main:hover .box:nth-child(3){
+            left: 420px;
+        }
+        .main:hover .box:nth-child(2){
+            left: 210px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice of position see effect on hover</h1>
+    <div class="main">
+        <div class="box">
+            <img src="img/image1.webp" alt="">
+        </div>
+        <div class="box">
+            <img src="img/image3.webp" alt="">
+        </div>
+        <div class="box">
+            <img src="img/image4.webp" alt="">
+        </div>
+        <div class="box">
+            <img src="img/image5.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

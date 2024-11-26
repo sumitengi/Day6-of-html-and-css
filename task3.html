@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            width: 900px;
+            margin: 20px auto;
+        }
+        .main{
+            width: 900px;
+            height: 500px;
+            border: 2px solid black;
+            position: relative;
+            margin: auto;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+            text-align: center;
+            background-color: burlywood;
+            border: 2px solid black;
+            position: absolute;
+            transition: 0.5s;
+        }
+        .box:first-child{
+            top: 150px;
+            left: 350px;
+        }
+        .box:nth-child(2){
+            top: 150px;
+            right: 350px;
+        }
+        .box:nth-child(3){
+            bottom: 150px;
+            left: 350px;
+        }
+        .box:last-child{
+            bottom: 150px;
+            right: 350px;
+        }
+        .main:hover .box:first-child{
+            top: 0px;
+            left: 0px;
+        }
+        .main:hover .box:nth-child(2){
+            top: 0px;
+            right: 0px;
+        }
+        .main:hover .box:nth-child(3){
+            bottom: 0px;
+            left: 0px;
+        }
+        .main:hover .box:last-child{
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice of position see effect on hover</h1>
+    <div class="main">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 500px;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .main{
+            width: 250px;
+            height: 350px;
+            box-shadow: 0px 0px 4px 0px gray;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .box{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -100%;
+            left: 0px;
+            transition: 0.5s;
+        }
+        h2{
+            width: 100%;
+            font-size: 50px;
+            padding: 10px;
+            background-color: white;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .main:hover .box{
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice of position see effect on hover</h1>
+    <div class="main">
+        <img src="img/image1.webp" alt="">
+        <div class="box">
+            <h2>Hello</h2>
+        </div>
+    </div>
+</body>
+</html>

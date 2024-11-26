@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 500px;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .main{
+            width: 250px;
+            height: 350px;
+            box-shadow: 0px 0px 4px 0px gray;
+            margin: auto;
+        }
+        .box{
+            width: 100%;
+            height: 250px;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+        }
+        .box1{
+            width: 100%;
+            height: 100px;
+            background-color: aqua;
+            position: relative;
+            overflow: hidden;
+        }
+        .price{
+            width: 100%;
+            padding: 10px 0px;
+            font-size: 25px;
+            text-align: center;
+        }
+        .buy{
+            width: 100px;
+            text-align: center;
+            border: 1px solid black;
+            background-color: burlywood;
+            font-size: 20px;
+            padding: 5px;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+            transition: 0.5s;
+        }
+        .cart{
+            width: 100px;
+            text-align: center;
+            border: 1px solid black;
+            background-color: burlywood;
+            font-size: 20px;
+            padding: 5px;
+            position: absolute;
+            top: 50px;
+            right: -100%;
+            transition: 0.5s;
+        }
+        .box1:hover .buy{
+            left: 0px;
+        }
+        .box1:hover .cart{
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice of position see effect on hover</h1>
+    <div class="main">
+       <div class="box">
+         <img src="img/images.jpeg" alt="">
+       </div>
+       <div class="box1">
+           <div class="price">₹500</div>
+           <div class="buy">Buy Now</div>
+           <div class="cart">Add to cart</div>
+       </div>
+    </div>
+</body>
+</html>
